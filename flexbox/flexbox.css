@@ -1,0 +1,74 @@
+/* body, html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    background-color: rgba(15, 27, 46, 0.377);
+    color: #fff;
+} */
+
+.container {
+    margin: 20px;
+}
+
+.flex-container {
+    display: flex;
+    gap: 10px;
+}
+
+.square {
+    width: 100px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+}
+
+.pastel-1 {
+    background-color: #ffd1dc;
+}
+.pastel-2 {
+    background-color: #c1f0f6;
+}
+.pastel-3 {
+    background-color: #fef3bd;
+}
+.pastel-4 {
+    background-color: #d4f4dd;
+}
+.flex-direction-row {
+    flex-direction: row;
+}
+.flex-direction-column {
+    flex-direction: column;
+}
+.justify-content-space-between {
+    justify-content: space-between;
+}
+.justify-content-space-evenly {
+    justify-content: space-evenly;
+}
+
+.justify-content-center {
+    justify-content: center;
+}
+.justify-content-flex-end {
+    justify-content: flex-end;
+}
+.justify-content-flex-start {
+    justify-content: flex-start;
+}  
+.align-items-flex-start {
+    align-items: flex-start;
+}
+.align-items-flex-end {
+    align-items: flex-end;
+}
+.align-items-center {
+    align-items: center;
+}
+.align-items-stretch {
+    align-items: stretch;
+}   
+

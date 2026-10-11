@@ -1,0 +1,292 @@
+/* Navigation project CSS */
+/* General styles for navigation */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: whitesmoke;
+}
+
+div.Horizontal-links h1 {
+    color: rgba(145, 9, 129, 0.413);
+}
+
+div.Horizontal-links nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    width: 500px;
+    background-color: #cb851a;
+    padding: 5px;
+    border-radius: 5px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+div.Horizontal-links nav ul {
+    margin-bottom: 5px;
+    padding: 0;
+    list-style-type: none;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    color: rgb(204, 39, 39);
+}
+
+/* Styles for navigation links */
+div.Horizontal-links a {
+    text-decoration: none;
+    color: rgb(222, 20, 20);
+    margin: 0 10px;
+}
+
+div.Horizontal-links li a {
+    color: rgb(38, 228, 105);
+}
+
+/* Styles for navigation buttons */
+div.Horizontal-links li button {
+    padding: 5px 10px;
+    background-color: #d42f2f;
+    border: 1px solid #103ed5;
+    border-radius: 5px;
+    transition: background-color 0.3s, transform 0.3s;
+    cursor: pointer;
+}
+
+div.Horizontal-links li button:hover {
+    background-color: #f02de9;
+    transform: scale(1.05);
+}
+div.vertical-links h1 {
+    color: rgba(2, 34, 13, 0.517);
+}
+div.vertical-links nav
+ {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    width: 200px;
+    background-color: #0dbb39;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+div.vertical-links nav div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+div.vertical-links nav div button {
+    padding: 5px 10px;
+    color: black;  
+    border: 1px solid #6599de;
+    background-color: #f0f0f0;
+    border: 1px solid #6599de;
+    border-radius: 5px;
+    transition: background-color 0.3s, transform 0.3s;
+    cursor: pointer;
+}
+div.vertical-links nav div button:hover {
+    background-color: #1417a0;
+    transform: scale(1.05);
+}   
+
+div.vertical-links div a {
+    color: white;
+    text-decoration: none;
+    margin: 5px 0;
+    border: 1px solid #0dbb39;
+}
+
+div.dropdown-menu h1 {
+    color: blue;
+    text-decoration: none;
+    margin-bottom: 10px;
+    display: block;
+    padding: 10px;
+    border-bottom: 2px solid blue;
+    border-radius: 5px;
+    background-color: #f0f0f0;
+}   
+
+div.dropdown-menu nav  {
+    margin-bottom: 20px;
+    background-color: #a7a9cb;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0 0 0 0;
+    width: 500px;
+    padding: 10px;
+    border-radius: 5px; 
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s, transform 0.3s;
+    cursor: pointer;
+}
+
+/* div.dropdown-menu nav button {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+} */
+
+div.dropdown-menu nav a:hover {
+    background-color: #b734b2;
+    transform: scale(1.05);
+}
+
+/* div.dropdown-menu div a div a  {
+    color: rgb(200, 23, 23);
+    text-decoration: none;
+    margin: 5px 0;
+    border: 1px solid #a7a9cb;
+} */
+
+div.dropdown-menu nav button {
+    padding: 5px 10px;
+    background-color: #2d30e7;
+    border: 1px solid #31e154c0;
+    border-radius: 5px;
+    transition: background-color 0.3s, transform 0.3s;
+    cursor: pointer;
+}
+
+div.dropdown-menu nav button:hover {
+    background-color: #3db2b263;
+    transform: scale(1.05);
+}   
+
+/* Services dropdown */
+div.dropdown-menu nav > div {
+    position: relative;
+}
+
+div.dropdown-menu nav > div > a {
+    display: block;
+}
+
+div.dropdown-menu nav > div > div {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    flex-direction: column;
+    background-color: #a7a9cb;
+    border-radius: 5px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    min-width: 120px;
+}
+
+div.dropdown-menu nav > div > div a {
+    padding: 8px 10px;
+    white-space: nowrap;
+}
+
+div.dropdown-menu nav > div:hover > div {
+    display: flex;
+    animation: fadeIn 0.3s ease-in-out;
+}
+
+/* Styles for navigation unordered list */
+ /*nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    background-color: #2a2a2a;
+    /* padding: 10px; */
+    border-radius: 5px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+
+/*nav li {
+    margin: 0 10px;
+    padding: 0 10px;
+    background-color: #2a2a2a;
+    display: inline-block;
+    vertical-align: middle;
+    text-align: center;
+    line-height: 1.5;
+    min-width: 100px;
+    border-radius: 5px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+nav li:hover {
+    background-color: blueviolet;
+    transform: scale(1.05) translateY(-2px); 
+    cursor: pointer;
+    outline: none;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    /* transform: translateY(-2px); */
+
+/* Styles for navigation dropdown menu */
+/*nav div {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+    transform: scale(1);
+}
+
+nav div:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+    outline: none;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    transform: scale(1.05) translateY(-2px);
+}
+
+nav div a {
+    color: blue;
+    text-decoration: none;
+    display: block;
+    padding: 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+div h1 {
+    color: black;
+}
+
+nav div a:hover {
+    background-color: #3a3a3a;
+    transform: scale(1.05) translateY(-2px);
+    cursor: pointer;
+}
+
+nav div div {
+    display: none;
+    position: absolute;
+    background-color: #2a2a2a;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+/*nav div:hover div {
+    display: block;
+    transform: scale(1.05) translateY(-2px);
+    cursor: zoom-in;
+    outline: none;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    padding: 10px;
+}*/

@@ -1,0 +1,17 @@
+#grid {
+  display: grid;
+  width: 100%;
+  grid-template-columns: 50px 1fr;
+  grid-template-rows: 50px 1fr 1fr;
+  gap: 10px;
+  /* justify-items: center; */
+  align-items: center;
+}
+
+#areaA {
+  background-color: lime;
+}
+
+#areaB {
+  background-color: yellow;
+}
